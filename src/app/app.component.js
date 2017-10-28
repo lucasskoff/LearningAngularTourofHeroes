@@ -11,7 +11,7 @@ var AppComponent = (function () {
         this.title = 'Tour of Heroes';
         this.hero = {
             id: 1,
-            name: 'Windsotrm'
+            name: 'Windstorm'
         };
     }
     return AppComponent;
@@ -19,7 +19,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "<h1>{{title}}</h1><h2>{{hero.name}} details!</h2>",
+        template: "\n    <h1>{{title}}</h1>\n    <h2>{{hero.name}} details!</h2>\n    <div><label>id: </label>{{hero.id}}</div>\n    <div><label>name: </label>\n      <input [(ngModel)]=\"hero.name\" placeholder=\"name\">\n    </div>\n  ",
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
